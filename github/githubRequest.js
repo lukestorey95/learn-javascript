@@ -7,8 +7,7 @@ function handleReceivedResponse(response) {
 
 function fetchRespositoryInfo(url, callback) {
   githubUrl = `https://api.github.com/repos/${url}`;
-  got(githubUrl).then(callback(resultObject));
-  resultObject = JSON.parse(result.body);
+  got(githubUrl).then(callback);
 }
 
 // fetchJson("https://jsonplaceholder.typicode.com/todos", handleReceivedResponse);
